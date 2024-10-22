@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-:root, :root[data-theme='dark'] {
+
+:root {
+  --Open: "Open Sans", sans-serif;
+}
+
+:root[data-theme='dark'] {
   --primary-color: #F0F0F0;
 
   --primary-bg-color: #111217;
@@ -84,7 +90,7 @@ b {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
@@ -107,7 +113,7 @@ h4 {
 }
 
 h1, h2, h3 {
-  font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--Open);
   text-transform: uppercase;
   color: var(--title-color);
   font-weight: 200;
@@ -259,10 +265,10 @@ main {
   gap: 1.5rem;
 }
 
-.main__content2 iframe {
+/* .main__content2 iframe {
   width: 100%;
   aspect-ratio: 16/9;
-}
+} */
 
 .technologies {
   display: flex;
@@ -270,7 +276,7 @@ main {
   justify-content: flex-start;
   align-items: center;
   gap: 1.25rem;
-  padding: 6.25rem 1rem 2rem;
+  padding: 2.25rem 1rem 2rem;
   background: var(--secondary-bg-color);
   margin-top: -5.5rem;
 }
